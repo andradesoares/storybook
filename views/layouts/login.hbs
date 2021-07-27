@@ -10,13 +10,20 @@
   <title>StoryBooks Login</title>
 </head>
 <body>
-  <div class="container login-container">
-    <div class="card">
-      <div class="card-content">
-        {{{body}}}  
-      </div>
-    </div>
-  </div>
+  {{{body}}}  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+  <script>
+    function myFunction() {
+      let passwordArea = document.getElementById("password");
+      let passwordIcon = document.getElementById("passwordIcon")
+      if (passwordArea.type === "password") {
+        passwordIcon.className = "fa fa-eye-slash"
+        passwordArea.type = "text";
+      } else {
+        passwordArea.type = "password";
+        passwordIcon.className = "fa fa-eye"
+      }
+    }
+  </script> 
 </body>
 </html>

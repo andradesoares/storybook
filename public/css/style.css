@@ -24,3 +24,11 @@ p {
 .image-small {
   width: 180px;
 }
+
+#passwordIcon {
+  margin-top: 40px !important;
+}
+
+#passwordIcon:hover {
+  cursor: pointer;
+}
